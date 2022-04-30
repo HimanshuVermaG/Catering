@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 header{
     height:54px;
 }
@@ -10,6 +13,7 @@ nav{
     display: grid;
     grid-template-columns: auto auto auto;
     position: fixed;
+    z-index: 99;
 }
 .left{
     padding:0px;
