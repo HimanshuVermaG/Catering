@@ -14,7 +14,6 @@
     grid-template-rows:80% 20%;
 }
 #box{
-    /* border: 2px solid black; */
     height:100%;
     width:100%;
 }
@@ -79,3 +78,15 @@ label{
     font-weight: bold;
     font-size: 18px;
 }
+/* .sub{
+    display:flex;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    border: 1px solid black;
+
+}
+.map,.review{
+    border: 1px solid black;
+
+} */
