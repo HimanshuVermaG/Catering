@@ -1,6 +1,9 @@
 *{
     margin:0px;
 }
+.cantainer{
+    display:block;
+}
 .filter{
     width: 100vw;
     display: grid;
@@ -31,7 +34,6 @@
     grid-template-rows: 80% 20%;
 }
 .box{
-    /* border:1px solid black; */
     height: 100%;
     width: 100%;
 }
@@ -73,7 +75,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
 }
 .price h1,h2{
     margin: 0px;

@@ -11,17 +11,22 @@ nav{
     grid-template-columns: auto auto auto;
     position: fixed;
 }
+.left{
+    padding:0px;
+    margin:0px;
+}
 .logo{
     cursor: pointer;
-    display:flex;
     align-items: center;
+    display:flex;
     justify-content: center;
     border: 2px solid black;
     margin: 10px 40px;
 }
-.logo p{
+.logo a{
     font-size:18px;
     line-height: 30px;
+    padding:0px 10px;
 }
 .tags{
     display: grid;
