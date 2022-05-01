@@ -48,7 +48,8 @@ nav span{
     margin-top: 15px;   
 }
 nav span :hover{
-    border-bottom:3px solid #C11E5E ;
+    border-bottom:3px solid #C11E5E;
+    transition: border-width 0.2s ease;
 }
 #active{
     border-bottom:3px solid #C11E5E ;
