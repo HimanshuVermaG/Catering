@@ -36,7 +36,6 @@
 }
 .heading{
     text-align: center;
-    grid-column:1/ span 2;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
