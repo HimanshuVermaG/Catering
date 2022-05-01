@@ -51,9 +51,10 @@ nav span :hover{
 #active{
     border-bottom:3px solid #C11E5E ;
 }
-a{
+nav a{
     text-decoration: none;
     color:black;
+    font-size:20px;
 }
 .right{
     display: flex;

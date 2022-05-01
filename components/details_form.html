@@ -1,81 +1,339 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Multi Step Form | CodingNepal</title>
-      <link rel="stylesheet" href="../css/details_form.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <div class="container">
-         <header>Signup Form</header>
-         <div class="progress-bar">
-            <div class="step">
-               <p>
-                  Name
-               </p>
-               <div class="bullet">
-                  <span>1</span>
-               </div>
-               <div class="check fas fa-check"></div>
+
+<head>
+   <meta charset="utf-8">
+   <title>Multi Step Form | CodingNepal</title>
+   <link rel="stylesheet" href="../css/nav.css">
+   <link rel="stylesheet" href="../css/details_form.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+   <header>
+      <nav>
+          <div class="left">
+              <div class="logo">
+                  <a href="./index.html">BOOK MY CATERING </a>
+              </div>
+          </div>
+          <div class="tags">
+              <span><a href="./index.html" id="active">CATERING</a></span>
+              <span><a href="./components/services.html">SERVICES</a></span>
+              <span><a href="/about.html">ABOUT</a></span>
+              <span><a href="/contact.html">CONTACT</a></span>
+          </div>
+          <div class="right">
+              <div class="button">
+                  <a href="./components/login.html">LOGOUT</a>
+              </div>
+          </div>
+      </nav>
+  </header>
+   <div class="container">
+      <div class="progress-bar">
+         <div class="step">
+            <p>
+               Detail
+            </p>
+            <div class="bullet">
+               <span>1</span>
             </div>
-            <div class="step">
-               <p>
-                  Submit
-               </p>
-               <div class="bullet">
-                  <span>2</span>
-               </div>
-               <div class="check fas fa-check"></div>
-            </div>
+            <div class="check fas fa-check"></div>
          </div>
-         <div class="form-outer">
-            <form action="#">
-               <div class="page slide-page">
-                  <div class="title">
-                     Basic Info:
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        First Name
+         <div class="step">
+            <p>
+               Menu
+            </p>
+            <div class="bullet">
+               <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+      </div>
+      <div class="form-outer">
+         <form action="#">
+            <div class="page slide-page">
+               <div class="booking-details">
+                  <div class="heading">
+                     <h1>Catering Service Form</h1>
+                 </div>
+                  <div class="input-fields">
+                     <div class="personal">
+                        <div class="input-container">
+                           <label for="">Full Name</label><br>
+                           <input type="text" name="full_name">
+                        </div>
+                        <div class="input-container">
+                           <label for="">Phone No.</label><br>
+                           <input type="tel" name="phone_no">
+                        </div>
+                        <div class="input-container">
+                           <label for="">Email-ID</label><br>
+                           <input type="email" name="email">
+                        </div>
                      </div>
-                     <input type="text">
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Last Name
+                     <div class="other">
+                        <div class="input-container x">
+                           <label for="">Address</label><br>
+                           <input type="text" name="address">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">City</label><br>
+                           <input type="text" name="city">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">State</label><br>
+                           <input type="text" name="state">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">Pin-Code</label><br>
+                           <input type="text" name="text">
+                        </div>
                      </div>
-                     <input type="text">
+                     <div class="inform">
+                        <div class="input-container z">
+                           <label for="">Service</label><br>
+                           <input type="text" name="service">
+                        </div>
+                        <div class="input-container z">
+                           <label for="">Caters</label><br>
+                           <input type="number" name="caters">
+                        </div>
+                        <div class="input-container z">
+                           <label for="">Date</label><br>
+                           <input type="date" name="caters">
+                        </div>
+                        <div class="input-container z">
+                           <label for="">Shift</label><br>
+                           <select name="shift">
+                              <option value="none" selected>Select</option>
+                              <option value="1">Morning</option>
+                              <option value="2">Afternoon</option>
+                              <option value="3">Night</option>
+                              <option value="other">All Day</option>
+                           </select>
+                        </div>
+                     </div>
                   </div>
                   <div class="field">
                      <button class="next">Next</button>
                   </div>
                </div>
-               <div class="page">
-                  <div class="title">
-                     Login Details:
+            </div>
+            <div class="page">
+               <div class="menu">
+                  <div class="products">
+                      <div class="block">
+                          <h2>Break Fast</h2>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Paratha</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Sandwich</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="block">
+                          <h2>Lunch</h2>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Paneer</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="block">
+                          <h2>Dinner</h2>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Butter Chicken</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="product">
+                              <div class="product-info">
+                                  <div class="item">
+                                      <h3 class="product-name">Mutton Nihari</h3>
+                                      <span class="border"></span>
+                                      <h4 class="product-price">₹ 1,000</h4>
+                                      <p class="product-add">
+                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                          <span class="add">Add</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="field">
-                     <div class="label">
-                        Username
-                     </div>
-                     <input type="text">
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Password
-                     </div>
-                     <input type="password">
+                  <div class="cart">
+                      <div class="box">
+                          <h2>Selected Items</h2>
+                          <div class="cart-items">
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="elements">
+                                  <div class="element">
+                                      <h3 class="product-name">Dal Makhni</h3>
+                                      <h3 class="product-price">₹ 1,000</h3>
+                                      <p class="product-remove">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                          <span class="remove">Remove</span>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cart-total">
+                              <p>
+                                  <span>Total Price</span>
+                                  <span>₹ 3,000</span>
+                              </p>
+                              <p>
+                                  <span>Number of Items</span>
+                                  <span>2</span>
+                              </p>
+                              <p>
+                                  <span>You Save</span>
+                                  <span>₹ 1,000</span>
+                              </p>
+                              <button class="submit sm">Proceed to Checkout</button>
+                          </div>
+                      </div>
                   </div>
                   <div class="field btns">
                      <button class="prev">Previous</button>
-                     <button class="submit">Submit</button>
                   </div>
-               </div>
-            </form>
-         </div>
+              </div>
+            </div>
+         </form>
       </div>
-      <script src="../js/details-form.js"></script>
-   </body>
+   </div>
+   <script src="../js/details-form.js"></script>
+</body>
+
 </html>
