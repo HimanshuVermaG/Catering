@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-* :not(header){
+*{
 	font-family: 'Comfortaa', cursive;
 	margin: 0;
 	padding: 0;
@@ -112,7 +112,7 @@ h2{
 .cart-items{
     width:250px;
     min-height: none;
-    max-height: 350px;
+    max-height: 300px;
     overflow-x: hidden;
     overflow-y: auto;
     margin-bottom: 20px;
@@ -140,15 +140,10 @@ h2{
 }
 
 .cart-total p{
-
 	display: flex;
-
 	justify-content: space-between;
-
 	margin-bottom: 30px;
-
 	font-size: 20px;
-
 }
 
 .cart-total a{
