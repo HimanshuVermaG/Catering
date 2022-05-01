@@ -59,18 +59,19 @@
     width:24px;
     margin: 10px;
 }
-.button{
+.item-button{
+    grid-column: 1/ span 2;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px 0px;
 }
-.button a{
+.item-button a{
     cursor: pointer;
     font-size:18px;
     color:white;
-    padding:10px 40px;
+    padding:10px 140px;
     border: none;
     background-color:#C11E5E;
 }

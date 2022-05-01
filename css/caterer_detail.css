@@ -2,16 +2,16 @@
     margin: 0px;
 }
 .container{
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 .main{
-    margin: 20px;
-    height: 480px;
-    width: 97vw;
+    margin: 50px;
+    height: 350px;
+    width: 80vw;
     background-color: #F4EDF0;
     display:grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows:80% 20%;
+    grid-template-columns: 50% 50%;
 }
 #box{
     height:100%;
@@ -53,8 +53,6 @@ select{
 }
 .button{
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     margin-top: 10px;
 }
