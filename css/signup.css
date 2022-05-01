@@ -1,14 +1,8 @@
-.image-section{
-    background-image: url("../images/19836.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .heading-section{
     margin-top: 35px;
     margin-bottom:10px;
 }
-
 .input-fields{
     display: grid;
     grid-template-columns: auto auto; 
@@ -18,6 +12,7 @@ input{
     text-align: center;  
     font-size: 14px;
 }
+
 .input-container{
     margin-top: 20px;
 }
@@ -27,7 +22,7 @@ input{
 }
 .address input{
     margin-top: 30px;
-    width: 86%;
+    width: 92%;
 }
 .box{
     display: grid;

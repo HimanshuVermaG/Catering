@@ -12,7 +12,7 @@
 
     <div class="container">
         <div class="innercontainer row">
-            <div class="image-section"><img src="#" alt=""></div>
+            <div class="image-section"><img src="../image/signup_img.jpeg" alt=""></div>
             <div class="register-section">
                 
                 <div class="heading-section">
@@ -25,10 +25,22 @@
                             <label for="">Full Name</label><br>
                             <input type="text" name = "full_name">
                         </div>
-
                         <div class="input-container">
                             <label for="">Email-ID</label><br>
                             <input type="email" name = "email">
+                        </div>
+                        <div class="input-container">
+                            <label for="">User-Type</label><br>
+                            <select name="user_type">
+                                <option value="normal" selected>Normal</option>
+                                <option value="catering">Catering-Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Phone No.</label><br>
+                            <input type="tel" name = "phone_no">
                         </div>
                         <div class="input-container">
                             <label for="">Password</label><br>
@@ -39,26 +51,6 @@
                             <label for="">Confirm Password</label><br>
                             <input type="password" name = "cpassword">
                         </div>
-
-                        <div class="input-container">
-                            <label for="">User-Type</label><br>
-                            <select name="user_type">
-                                <option value="none" selected>Normal</option>
-                                <option value="catering">Catering-Service</option>
-                                <option value="other">other</option>
-                            </select>
-                        </div>
-
-                        <div class="input-container">
-                            <label for="">Gender</label><br>
-                            <select name="gender">
-                                <option value="none" selected>Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">other</option>
-                            </select>
-                        </div>
-
                     </div>  
 
                     <div class="input-container address">
