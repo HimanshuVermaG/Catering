@@ -21,15 +21,15 @@ submitBtn.addEventListener("click", function(){
   progressText[current - 1].classList.add("active");
   current += 1;
   setTimeout(function(){
-    alert("Your Form Successfully Signed up");
+    alert("Your Form Successfully Submited");
     location.reload();
   },800);
 });
 prevBtn.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
-  bullet[current - 2].classList.remove("active");
-  progressCheck[current - 2].classList.remove("active");
-  progressText[current - 2].classList.remove("active");
+  bullet[current - 1].classList.remove("active");
+  progressCheck[current - 1].classList.remove("active");
+  progressText[current - 1].classList.remove("active");
   current -= 1;
 });

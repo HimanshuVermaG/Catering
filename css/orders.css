@@ -35,6 +35,7 @@
     margin:20px;
 }
 .heading{
+    grid-column: 1/ span 2;
     text-align: center;
     font-size: 22px;
     font-weight: bold;

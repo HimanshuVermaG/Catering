@@ -66,6 +66,12 @@
     padding:0px 40px;
     margin:30px 60px 20px 60px;
 }
+.right-details h3{
+    display: inline-block;
+    border-bottom: 1px solid #C11E5E;
+    padding:0px 40px;
+    margin:30px 60px 20px 60px;
+}
 .right-item{
     display:grid;
     grid-template-columns:25% 50% 25%;
