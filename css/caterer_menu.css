@@ -16,7 +16,7 @@
 .add-meal {
 	margin-top: 20px;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -101,7 +101,23 @@ h2 {
 	width: 100%;
 	position: relative;
 }
-
+.product-add {
+	position: block;
+	height: 40px;
+	width: 120px;
+	padding: 10px 25px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 25px;;
+}
+.product-add:hover {
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
+}
 .product-remove {
 	position: block;
 	height: 40px;
