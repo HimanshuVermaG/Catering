@@ -2,8 +2,9 @@
     margin: 0px;
 }
 .container{
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-rows: auto auto;
 }
 .main{
     margin: 50px;
@@ -39,6 +40,10 @@
     width:24px;
     margin: 10px;
 }
+.item-rate{
+    margin: 0px 10px ;
+    font-size:22px;
+}
 .box3{
     display: flex;
     justify-content:space-around;
@@ -51,12 +56,8 @@ select{
     width: 210px;  
     font-size: 14px;
 }
-.button{
-    display: flex;
-    text-align: center;
+button{
     margin-top: 10px;
-}
-.button a{
     cursor: pointer;
     font-size:18px;
     color:white;
@@ -76,15 +77,31 @@ label{
     font-weight: bold;
     font-size: 18px;
 }
-/* .sub{
-    display:flex;
-    align-items: center;
-    width: 100vw;
-    height: 200px;
-    border: 1px solid black;
-
+.other{
+    width: 80vw;
+    margin: 0px 50px;
 }
-.map,.review{
-    border: 1px solid black;
-
-} */
+.other h1{
+    display: inline-block;
+    border-bottom: 3px solid #C11E5E;
+    padding:5px 20px;
+    margin-bottom:20px;
+}
+.review{
+    display:grid;
+    grid-template-columns: 10% 70% 20%;
+    border: 1px solid #C11E5E;
+    width: 500px;
+    margin:10px 0px;
+    background-color: #F4EDF0;
+}
+.date{
+    text-align: center;
+    align-self: end;
+}
+.user-rating{
+    display: flex;
+}
+.rate{
+    margin-left:20px;
+}
