@@ -70,20 +70,20 @@ select{
     margin-top:20px;
 }
 .select-button{
-    width:37vw;
+    width:34vw;
     cursor: pointer;
     font-size:18px;
-    padding:10px 40px;
+    padding:10px 34px;
     border: none;
 }
-.form-control-img{
+.add-img,.select-button input{
     cursor: pointer;
     font-size:18px;
     padding:10px 40px;
     border: 1px solid #C11E5E;
     background-color: #FFE2EE;
 }
-.form-control-detail{
+.form-control-btn{
     cursor: pointer;
     color:white;
     font-size:18px;
