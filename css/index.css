@@ -67,11 +67,12 @@
     text-align: center;
     margin-top: 10px 0px;
 }
-.item-button a{
+button{
+    width: 300px;
     cursor: pointer;
     font-size:18px;
     color:white;
-    padding:10px 140px;
+    padding:10px 40px;
     border: none;
     background-color:#C11E5E;
 }
