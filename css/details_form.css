@@ -91,7 +91,9 @@ form .page .field select{
 }
 .container .progress-bar{
   display: flex;
-  margin: 15px 400px 5px 400px;
+  max-height: 100px;
+  max-width:40vw;
+  margin: 20px auto;
   user-select: none;
 }
 .container .progress-bar .step{
@@ -134,9 +136,9 @@ form .page .field select{
   position: absolute;
   content: '';
   bottom: 11px;
-  right: -270px;
+  right: -250px;
   height: 3px;
-  width: 250px;
+  width: 240px;
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
@@ -183,7 +185,7 @@ form .page .field select{
   border: none;
   box-shadow: 2px 5px 10px #c11e5e;
   transform: scale(1.01);
-  margin:40px 180px;
+  margin:auto;
 
 }
 .booking-details h1{
@@ -379,9 +381,6 @@ h2{
     grid-template-rows: 50% 50%;
 	margin-left: 20px;
 }
-.box{
-    position: fixed;
-}
 .cart-items{
     width:250px;
     min-height: none;
@@ -407,7 +406,7 @@ h2{
 }
 .cart-total{
 	padding: 20px;
-	height: 200px;
+	height: 150px;
 	border: 1px solid silver;
 	border-radius: 5px;
 }
@@ -422,6 +421,9 @@ h2{
 .cart-total button{
   font-size: 14px;
 	height: 40px;
+}
+.cart-total span{
+  font-size: 16px;
 }
 @media screen and (max-width: 700px){
 

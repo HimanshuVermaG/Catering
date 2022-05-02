@@ -52,7 +52,7 @@
 .u{
     color: #636e72;
 }
-.order a{
+.order button{
     grid-column: 1/ span 2;
 	display: block;
 	text-align: center;
@@ -62,9 +62,10 @@
 	color: black;
 	text-decoration: none;
     border: 1px solid #C11E5E;
+    font-size: 15px;
 
 }
-.order a:hover{
+.order button:hover{
     color: white;
 	background-color: #C11E5E;
 }
