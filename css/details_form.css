@@ -61,7 +61,7 @@ form .page .field select{
   font-size: 17px;
   font-weight: 500;
 }
-button{
+.btn button{
   width: 100%;
   height: calc(100% + 5px);
   border: none;
@@ -76,17 +76,17 @@ button{
   text-transform: uppercase;
   transition: 0.5s ease;
 }
-button:hover{
+.btn button:hover{
   background: #000;
 }
-button{
+.btn button{
   margin-top: -20px!important;
 }
-button.prev{
+.btn button.prev{
   margin-right: 3px;
   font-size: 17px;
 }
-button.next{
+.btn button.next{
   margin-left: 3px;
 }
 .container .progress-bar{
@@ -332,23 +332,33 @@ h2{
 	position: relative;
 }
 .product-add{
-	height: 20px;
-  width:60px;
+	height: 40px;
+  width:110px;
 	padding: 10px 25px;
 	background-color: green;
 	color: white;
 	cursor: pointer;
 	border-radius: 5px;
+  border: none;
 }
 .product-remove{
-  height: 20px;
-  width:40px;
-  width: 100px;
-	padding: 6px;
+	height: 30px;
+  width:100px;
+	padding: 0px 10px;
 	background-color: #C11E5E;
 	color: white;
 	cursor: pointer;
 	border-radius: 5px;
+  border: none;
+}
+.product-add span{
+  font-size: 16px;
+}
+.product-add:hover{
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
 }
 .product-remove:hover{
 	background-color: white;
