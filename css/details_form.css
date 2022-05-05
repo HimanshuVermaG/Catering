@@ -228,6 +228,9 @@ input{
   display: flex;
   justify-content:space-between;
 }
+.z input{
+  width: 150px;
+}
 .x input{
   width: 350px;
 }
