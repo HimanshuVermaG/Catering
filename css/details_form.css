@@ -335,7 +335,7 @@ h2{
 }
 .product-add{
 	height: 40px;
-  width:110px;
+  width:125px;
 	padding: 10px 25px;
 	background-color: green;
 	color: white;
@@ -352,6 +352,13 @@ h2{
 	cursor: pointer;
 	border-radius: 5px;
   border: none;
+}
+.mn{
+	height: 40px;
+  width:125px;
+}
+.mn span{
+  font-size: 16px;
 }
 .product-add span{
   font-size: 16px;
@@ -403,6 +410,9 @@ h2{
     justify-content:space-between;
     grid-template-columns: auto auto auto;
     margin: 10px 5px ;
+}
+.none{
+	display:none;
 }
 .cart-total{
 	padding: 20px;

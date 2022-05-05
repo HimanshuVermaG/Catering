@@ -49,7 +49,7 @@ nav span{
 }
 nav span :hover{
     border-bottom:3px solid #C11E5E;
-    transition: border-width 0.2s ease;
+    transition: border-width 0.1s ease;
 }
 #active{
     border-bottom:3px solid #C11E5E ;

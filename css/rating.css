@@ -21,13 +21,44 @@
 	min-height: 93vh;
 	padding: 1rem;
 }
-.wrapper {
-	background: var(--white);
-	padding: 2rem;
-	max-width: 576px;
-	width: 100%;
+.box{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 70vw;
+	height: 400px;
 	border-radius: .75rem;
 	box-shadow: var(--shadow);
+}
+.ordsuces{
+	background: var(--yellow);
+	width:100%;
+	border-radius: .75rem 0 0 .75rem;
+	box-shadow: var(--shadow);
+	padding: 6rem 0;
+}
+.ordsuces h3 {
+	color: var(--white);
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.check{
+	margin:0 40%;
+	border:1px solid var(--light);
+    border-radius: 100%;
+    display: inline-block;
+    padding: 15px;
+	height: 98px;
+    width: 96px;
+}
+.wrapper {
+	border-radius:0 .75rem .75rem 0 ;
+	box-shadow: var(--shadow);
+	background: var(--white);
+	padding: 2rem;
+	width: 100%;
 	text-align: center;
 }
 .wrapper h3 {

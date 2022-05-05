@@ -59,29 +59,28 @@ function startingFunction() {
       str = ""
       if (breakfast.length != 0) {
         str += `
-                                        <h2>Break Fast</h2>`
+        <h2>Break Fast</h2>`
         for (let i = 0; i < breakfast.length; i++) {
           items[breakfast[i].id] = breakfast[i];
-
           str += `<div class="product">
-                                <div class="product-info">
-                                    <div class="item" >
-                                        <h3 class="product-name">${breakfast[i].title}</h3>
-                                        <span class="border"></span>
-                                        <h4 class="product-price">₹ ${breakfast[i].price}</h4>
-                                        <button class="product-add" onClick="myFunction('add',this.id)" id="${breakfast[i].id}">
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                            <span class="add">Add</span>
-                                        </button>
-                                        <button class="product-remove none" onClick="myFunction('remove',this.id)" id='${breakfast[i].id}_remove'>
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                            <span class="remove">Remove</span>
-                                        </button>
-                            
-                                    </div>
-                                </div>
-                            </div>`
-        }
+                      <div class="product-info">
+                          <div class="item" >
+                              <h3 class="product-name">${breakfast[i].title}</h3>
+                              <span class="border"></span>
+                              <h4 class="product-price">₹ ${breakfast[i].price}</h4>
+                              <button class="product-add" onClick="myFunction('add',this.id)" id="${breakfast[i].id}">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                  <span class="add">Add</span>
+                              </button>
+                              <button class="product-remove mn none" onClick="myFunction('remove',this.id)" id='${breakfast[i].id}_remove'>
+                                  <i class="fa fa-trash" aria-hidden="true"></i>
+                                  <span class="remove">Remove</span>
+                              </button>
+                  
+                          </div>
+                      </div>
+                    </div>`
+          }
 
       }
       if (lunch.length != 0) {
@@ -100,7 +99,7 @@ function startingFunction() {
                                             <i class="fa fa-plus" aria-hidden="true"></i>
                                             <span class="add">Add</span>
                                         </button>
-                                        <button class="product-remove none" onClick="myFunction('remove',this.id)" id='${lunch[i].id}_remove'>
+                                        <button class="product-remove mn none" onClick="myFunction('remove',this.id)" id='${lunch[i].id}_remove'>
                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                             <span class="remove">Remove</span>
                                         </button>
@@ -129,7 +128,7 @@ function startingFunction() {
                                             <i class="fa fa-plus" aria-hidden="true"></i>
                                             <span class="add">Add</span>
                                         </button>
-                                        <button class="product-remove none" onClick="myFunction('remove',this.id)" id='${dinner[i].id}_remove'>
+                                        <button class="product-remove mn none" onClick="myFunction('remove',this.id)" id='${dinner[i].id}_remove'>
                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                             <span class="remove">Remove</span>
                                         </button>
