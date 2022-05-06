@@ -8,7 +8,7 @@ const router = new express.Router()
 
 //Register 
 router.post('/register',async (req, res) => {
-    console.log(req.body)
+    // console.log(req.body)
     const user = new User(req.body)
     const password = req.body.password
     const cpassword = req.body.cpassword
@@ -111,7 +111,7 @@ router.get('/detail/:id',async (req, res) => {
         if (!user) {
             return res.status(404).send()
         }
-        console.log(user)
+        // console.log(user)
         res.status(200).send(user)
     } catch (e) {
         res.status(500).send(e)
