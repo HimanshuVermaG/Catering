@@ -6,6 +6,7 @@ const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 let current = 1;
+const menu = import("../movies.json")
 
 nextBtn.addEventListener("click", function (event) {
   event.preventDefault();
@@ -151,14 +152,22 @@ window.onload = (event) => {
   startingFunction();
 };
 
-
 var cartList = []
-function myFunction(str, id) {
-  console.log(id);
+var breakfast = []
+var lunch = []
+var dinner = []
+function myFunction(str, time, id) {
   if (str == 'add') {
 
-    console.log(id + "_remove")
-    totalAmount += items[id].price;
+    perPlateAmount += items[id].price;
+    if (time == 'breakfast') {
+      breakfast.push(items[id]);
+    }
+    else if (time == 'lunch') {
+      lunch.push(items[id]);
+    } else {
+      dinner.push(items[id]);
+    }
     cartList.push(items[id]);
     document.getElementById(id).classList.add('none')
     document.getElementById(`${id}_remove`).classList.remove('none')
@@ -168,18 +177,33 @@ function myFunction(str, id) {
 
     id = id.substring(0, id.length - 7)
 
+    if (time == 'breakfast') {
+
+
+      breakfast = breakfast.filter((value) => {
+        return value.id != id;
+      });
+    }
+    else if (time == 'lunch') {
+      lunch = lunch.filter((value) => {
+        return value.id != id;
+      });
+    } else {
+      dinner = dinner.filter((value) => {
+        return value.id != id;
+      });
+    }
     cartList = cartList.filter((value) => {
       return value.id != id;
     });
-    totalAmount -= items[id].price;
     document.getElementById(id).classList.remove('none')
     document.getElementById(`${id}_remove`).classList.add('none')
   }
   updateCart();
-  console.log(cartList)
 }
 function updateCart() {
-  total_price.innerHTML = totalAmount.toString()
+  total_price.innerHTML = 'Rs ' + (perPlateAmount * details['no_of_people']).toString()
+  per_plate.innerHTML = 'Rs ' + perPlateAmount.toString()
   item_count.innerHTML = cartList.length.toString()
   let str = '';
   for (let i = 0; i < cartList.length; i++) {

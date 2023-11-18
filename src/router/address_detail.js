@@ -7,9 +7,6 @@ const auth = require('../middleware/auth')
 router.get('/services' ,(req,res)=>{
     res.render('services')
 })
-router.get('/booking_details' ,(req,res)=>{
-    res.render('booking_details')
-})
 
 router.post('/services/data', auth,async(req,res)=>{
     try {
@@ -58,12 +55,15 @@ router.get('/malik',auth, async (req,res)=>{
     res.send(user.tasks)
 })
 
+
+
 router.get('/caterer', async (req,res)=>{
     const user = await User.findById('626c50871fb8b44033987ef9')
     await user.populate('tasks')
    // console.log(user.tasks)
     res.send(user.tasks)
 })
+
 
 
 

@@ -1,5 +1,5 @@
 async function caterer_details() {
-    let id = localStorage.getItem('id')
+    let id = localStorage.getItem('currentCaterId')
     console.log(id)
     let baseUrl = 'http://localhost:3000/detail/'
     console.log(baseUrl + id.toString())
@@ -15,7 +15,7 @@ let a = caterer_details()
 x = document.querySelector('#name')
 
 function menuForm(){
-    window.location.href = '/payment'
+    window.location.href = '/services'
 }
 
 a.then((data) => {

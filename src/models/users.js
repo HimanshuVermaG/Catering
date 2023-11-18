@@ -89,6 +89,12 @@ userSchema.virtual('tasks',{
     localField : "_id",
     foreignField : "owner"
 })
+//edit
+userSchema.virtual('order',{
+    ref : "Order",
+    localField : "_id",
+    foreignField : "user_id"
+})
 
 //edit 
 userSchema.virtual('catere_id',{
@@ -96,6 +102,20 @@ userSchema.virtual('catere_id',{
     localField : "_id",
     foreignField : "caterer_id"
 })
+
+//edit 2
+userSchema.virtual('cater',{
+    ref :"Order",
+    localField : "_id",
+    foreignField : "cater_id"
+})
+
+userSchema.virtual('cater_menu',{
+    ref :"Catermenu",
+    localField : "_id",
+    foreignField : "user_id"
+})
+
 
 // generateAuthToken method 
 userSchema.methods.generateAuthToken = async function() {

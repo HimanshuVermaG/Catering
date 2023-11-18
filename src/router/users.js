@@ -1,5 +1,6 @@
 const express = require('express')
 const User = require('../models/users')
+const Cater = require('../models/caterer_register_form')
 const auth = require('../middleware/auth')
 const async = require('hbs/lib/async')
 var bodyParser = require('body-parser')
@@ -8,20 +9,27 @@ const router = new express.Router()
 
 //Register 
 router.post('/register',async (req, res) => {
-    // console.log(req.body)
+    console.log(req.body)
     const user = new User(req.body)
     const password = req.body.password
     const cpassword = req.body.cpassword
     if (password === cpassword) {
         try {
             await user.save()
+            console.log(user)
             const token = user.generateAuthToken()
             res.cookie("jwt", token,{
-                expires : new Date(Date.now() + 60000),
+                expires : new Date(Date.now() + 60000*50),
                 httpOnly: true
             })
             //res.status(201).send({user,token})
-            res.render('login')
+            if(user.user_type === 'normal'){
+                res.render('login')
+            }
+            else{
+                res.render('cater_register_form')
+            }
+            //res.render('login')
 
         } catch (e) {
             res.status(400).send(e)
@@ -47,13 +55,22 @@ router.post('/login', async (req, res) => {
         const user = await User.findByCredentials(req.body.email, req.body.password)
         const token = await user.generateAuthToken()
         res.cookie("jwt", token,{
-            // expires : new Date(Date.now() + 60000),
+            expires : new Date(Date.now() + 60000*50),
             httpOnly: true
         })
-        res.render('welcome')
+        //res.send({user,token})
+        //res.render('welcome',{user})    //edit 
+
+        //edit 
+        if(user.user_type === 'normal'){
+            res.render('welcome',{user})
+        }else{
+            res.render('cater_menu_form')
+        }
+
 
     } catch (e) {
-        res.status(401).send('Invalid Credentials!!!')
+        res.status(401).send('you have enter invalid username or password!')
     }
 })
 
@@ -100,6 +117,7 @@ router.post('/users', async (req, res) => {
     }
 })
 
+
 router.get('/details',async (req, res) => {
     res.render('caterer_details')
 })
@@ -108,10 +126,11 @@ router.get('/detail/:id',async (req, res) => {
     const _id = req.params.id 
     try {
         const user = await User.findById(_id)
+        //const user = await Cater.findById(_id)
         if (!user) {
             return res.status(404).send()
         }
-        // console.log(user)
+        console.log(user)
         res.status(200).send(user)
     } catch (e) {
         res.status(500).send(e)

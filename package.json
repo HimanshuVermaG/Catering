@@ -1,16 +1,12 @@
 {
-  "name": "catering",
+  "name": "catering_services_web_projecct",
   "version": "1.0.0",
-  "description": "Book my catering",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js -e js,hbs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/legend548/Catering.git"
-  },
-  "author": "Himanshu Verma",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -25,8 +21,5 @@
     "request": "^2.88.2",
     "validator": "^13.7.0"
   },
-  "bugs": {
-    "url": "https://github.com/legend548/Catering/issues"
-  },
-  "homepage": "https://github.com/legend548/Catering#readme"
+  "description": ""
 }
